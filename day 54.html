@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Media Types</title>
+
+    <style>
+        body {
+            background-color: lightblue;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        h1 {
+            color: blue;
+        }
+
+        p {
+            font-size: 20px;
+        }
+
+        @media print {
+            body {
+                background-color: white;
+                color: black;
+            }
+
+            h1 {
+                color: black;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>CSS Media Types</h1>
+    <p>This is an example of CSS media types.</p>
+    <p>Screen and print styles are different.</p>
+</body>
+</html>
