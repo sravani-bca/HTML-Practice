@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Device Breakpoints</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            background-color: lightblue;
+            text-align: center;
+            font-size: 24px;
+        }
+
+        /* Mobile devices */
+        @media (max-width: 600px) {
+            body {
+                background-color: lightpink;
+                font-size: 16px;
+            }
+        }
+
+        /* Tablets */
+        @media (min-width: 601px) and (max-width: 900px) {
+            body {
+                background-color: lightgreen;
+                font-size: 20px;
+            }
+        }
+
+        /* Desktop devices */
+        @media (min-width: 901px) {
+            body {
+                background-color: lightblue;
+                font-size: 24px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Device Breakpoints</h1>
+    <p>Responsive web design adjusts to different screen sizes.</p>
+</body>
+</html>
