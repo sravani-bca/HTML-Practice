@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Text Input</title>
+
+    <script language="JavaScript">
+        function fun(form) {
+            var str = form.inputbox.value;
+            alert("Text Entered is:" + str);
+        }
+    </script>
+</head>
+
+<body>
+
+    <form name="form_ex" action="" method="GET">
+
+        Enter text in the box:<br>
+
+        <input type="text" name="inputbox" value="">
+
+        <p>
+
+        <input type="button" name="button"
+        value="Click" onClick="fun(this.form)">
+
+    </form>
+
+</body>
+</html>
