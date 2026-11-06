@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Nested Function</title>
+</head>
+<body>
+
+    <h2>Nested Function in JavaScript</h2>
+
+    <script>
+        function outerFunction() {
+            var a = 10;
+            var b = 20;
+
+            document.write("This is the outer function<br>");
+
+            function innerFunction() {
+                var sum = a + b;
+                document.write("Sum = " + sum + "<br>");
+                document.write("This is the inner function");
+            }
+
+            innerFunction();
+        }
+
+        outerFunction();
+    </script>
+
+</body>
+</html>
