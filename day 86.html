@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Call by Reference</title>
+</head>
+<body>
+
+    <h2>Call by Reference in JavaScript</h2>
+
+    <p id="demo">Original Values: 10, 20, 30</p>
+
+    <button onclick="changeValues()">Change Values</button>
+
+    <script>
+        let numbers = [10, 20, 30];
+
+        function changeValues() {
+            numbers[0] = 100;
+            numbers[1] = 200;
+            numbers[2] = 300;
+
+            document.getElementById("demo").innerHTML =
+                "Updated Values: " + numbers;
+        }
+    </script>
+
+</body>
+</html>
