@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Nested Array</title>
+</head>
+<body>
+
+    <h2>Nested Array in JavaScript</h2>
+
+    <p id="result"></p>
+
+    <script>
+        // Creating a nested array
+        let students = [
+            ["Sravani", 18, "BCA"],
+            ["Priya", 19, "BCom"],
+            ["Ravi", 20, "BSc"]
+        ];
+
+        // Displaying nested array
+        let output = "";
+
+        for (let i = 0; i < students.length; i++) {
+            output += "Name: " + students[i][0] + "<br>";
+            output += "Age: " + students[i][1] + "<br>";
+            output += "Course: " + students[i][2] + "<br><br>";
+        }
+
+        document.getElementById("result").innerHTML = output;
+    </script>
+
+</body>
+</html>
