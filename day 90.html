@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Closure</title>
+</head>
+<body>
+
+    <h2>JavaScript Closure Example</h2>
+
+    <p id="result"></p>
+
+    <script>
+        function outerFunction() {
+            let count = 0;
+
+            function innerFunction() {
+                count++;
+                return count;
+            }
+
+            return innerFunction;
+        }
+
+        let counter = outerFunction();
+
+        document.getElementById("result").innerHTML =
+            counter() + "<br>" +
+            counter() + "<br>" +
+            counter();
+
+    </script>
+
+</body>
+</html>
