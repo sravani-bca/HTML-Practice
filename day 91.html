@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JSON Program</title>
+</head>
+<body>
+
+    <h2>JavaScript JSON Example</h2>
+
+    <p id="result"></p>
+
+    <script>
+        // Creating a JavaScript object
+        let student = {
+            name: "Sravani",
+            age: 18,
+            course: "BCA",
+            college: "Degree College"
+        };
+
+        // Convert object into JSON string
+        let jsonData = JSON.stringify(student);
+
+        // Display JSON data
+        document.getElementById("result").innerHTML =
+            "JSON Data: " + jsonData;
+
+        // Convert JSON string into JavaScript object
+        let newStudent = JSON.parse(jsonData);
+
+        // Display student details
+        document.write("<br><br>Student Details<br>");
+        document.write("Name: " + newStudent.name + "<br>");
+        document.write("Age: " + newStudent.age + "<br>");
+        document.write("Course: " + newStudent.course);
+    </script>
+
+</body>
+</html>
